@@ -35,7 +35,7 @@ def predict(Gender,TotalCharges, tenure, MonthlyCharges, PaymentMethod_Electroni
     return pred_df
 
 # Define the Gradio interface
-input_interface = [
+input_interface =  [
     
         gr.inputs.Radio(['Male','Female'], label="Gender"),
         gr.inputs.Slider(minimum=0, maximum=2000, default=50, label= "Total Charges"),
@@ -48,6 +48,9 @@ input_interface = [
         gr.inputs.Checkbox(label="Paperless Billing"),
         gr.inputs.Checkbox(label="Partner")
 ]
+
+
+
     
 label=pipeline['label']
 
@@ -55,4 +58,4 @@ output_table = gr.outputs.Dataframe(headers=['churn', 'confidence'],type='pandas
 
 # Create the Gradio app
 banner_html = "<img src='https://cdn-dfnaj.nitrocdn.com/xxeFXDnBIOflfPsgwjDLywIQwPChAOzV/assets/images/optimized/rev-509f30c/wp-content/uploads/2017/07/customer-churn-edit.jpeg' style='display: block; margin: auto; max-width: 100%; max-height: 400px;'>"
-gr.Interface ( fn=predict, inputs=input_interface, outputs=output_table,title="Churn Prediction App", description=banner_html, theme="compact", layout="vertical", interface_name="My Churn Prediction App").launch()
+gr.Interface ( fn=predict, inputs=input_interface, outputs=output_table,type="tabs",title="Churn Prediction App", description=banner_html, theme="dark", layout="vertical", interface_name="My Churn Prediction App",font="sans-serif").launch()
