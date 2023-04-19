@@ -10,8 +10,11 @@ This is a simple web application built with Python and Streamlit that predicts t
 
 ## Installation and Setup
 Clone the repository to your local machine
+
 Install the required packages by running pip install -r requirements.txt
+
 Run the app with python app.py
+
 Access the app by visiting http://localhost:7860
 
 ## Usage
