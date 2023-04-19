@@ -26,6 +26,7 @@ This is a Streamlit app that predicts the sales of products in a chain store. It
 ## Installation and Setup
 Clone the repository to your local machine
 
+
 Install the required packages by running pip install -r requirements.txt
 
 Run the app with streamlit run app.py
