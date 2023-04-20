@@ -8,7 +8,7 @@ This web application was built with Python and Gradio. It  predicts whether or n
 ## Installation and Setup
 Clone the repository to your local machine
 
-Install the required packages by running pip install -r requirements.txt
+Install the required packages
 
 Run the app with python app.py
 
