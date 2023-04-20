@@ -16,4 +16,4 @@ Once the app is running, enter the necessary input features in the provided inpu
 
 # Article
 Article for the app can be accessed using the following link
-
+https://medium.com/@botchwaykojo/rev-up-your-business-say-goodbye-to-churn-and-hello-to-success-with-gradios-prediction-app-d3e66365a113
